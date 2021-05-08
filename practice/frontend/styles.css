@@ -26,4 +26,8 @@
 .banner-text p{
     font-size: 20px;
     font-style: italic;
+    width: center;
+    border: 15px;
+    padding: 50px;
+    margin: 20px;
 }
