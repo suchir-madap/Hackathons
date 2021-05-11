@@ -10,36 +10,45 @@
     height: 100vh;
 }
 .logo{
-    width: 140px;
-    position: absolute;
+    width: 400px;
     top: 4%;
-    left: 4%;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .banner-text{
     text-align: center;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 0px;
 }
 .banner-text h1{
-    font-size: 100px;
+    font-size: 60px;
+    font-family: 'Patua One', cursive;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    letter-spacing: 0.08em;
 }
 .banner-text p{
     font-size: 20px;
-    font-style: italic;
     width: center;
     border: 15px;
-    padding: 50px;
-    margin: 20px;
+    margin: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .banner-btn{
     margin: 50px auto 0;
 }
 .banner-btn a{
-    width: 150px;
+    width: 100px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px;
     padding: 12px 0;
     color: #fff;
     border: .5px solid #fff;
@@ -95,6 +104,10 @@ nav ul li a{
     z-index: 3;
     cursor: pointer;
 }
-#manuBtn img{
 
+@media screen and (max-width; 770px){
+    .banner-text h1{
+        font-size: 44px;
+        font-family: 'Poppins', sans-serif;}
+    }
 }
