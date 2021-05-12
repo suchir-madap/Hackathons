@@ -19,9 +19,9 @@ def register():
     db = client['FLI']
     collection = db['users']
 
-    post = {'username': data['username'], 'password': data['password']}
+    post = {"username": data["username"], "password": data["password"]}
     collection.insert(post)
-    return jsonify({'success': True})
+    return jsonify({"success": True})
 
 @app.route('/login', methods=['GET'])
 def login():
@@ -30,12 +30,12 @@ def login():
     db = client['FLI']
     collection = db['users']
 
-    post = {'username': 'skamuju', 'password': 'flimiso13'}
+    post = {"username": data["username"], "password": data["password"]}
     if collection.find_one(post):
-        return jsonify({'success': True})
+        return jsonify({"success": True})
     
     else:
-        return jsonify({'success': False})
+        return jsonify({"success": False})
 
 @app.route('/test', methods = ['POST', 'GET'])
 def test():
