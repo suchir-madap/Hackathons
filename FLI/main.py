@@ -37,9 +37,25 @@ def login():
     else:
         return jsonify({"success": False})
 
-@app.route('/test', methods = ['POST', 'GET'])
-def test():
-    return 'test'
+@app.route('/events', methods = ['POST', 'GET'])
+def events():
+    return 'events'
+
+@app.route('/meetings', methods = ['POST', 'GET'])
+def meetings():
+    return 'meetings'
+
+@app.route('/officers', methods = ['POST', 'GET'])
+def officers():
+    return 'officers'
+
+@app.route('/join_us', methods = ['POST', 'GET'])
+def join_us():
+    return 'join_us'
+
+@app.route('/contact_us', methods = ['POST', 'GET'])
+def contact_us():
+    return 'contact_us'
 
 
 
