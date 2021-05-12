@@ -1,12 +1,16 @@
 
 
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from pymongo import MongoClient, operations
 
 app = Flask(__name__)
 
 #create our routes
+
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -16,7 +20,7 @@ def register():
     collection = db['users']
 
     post = {'username': data['username'], 'password': data['password']}
-    collection.insert_one(post)
+    collection.insert(post)
     return jsonify({'success': True})
 
 @app.route('/login', methods=['GET'])
@@ -39,4 +43,4 @@ def test():
 
 
 
-app.run(host = '0.0.0.0')
+app.run(host = '0.0.0.0', debug = True)
