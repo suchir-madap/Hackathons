@@ -8,4 +8,4 @@ Put this in the HTML head section and replace the CSS file
 
 When editing on Suchir's Computer Insert this as HTML
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/styles.css">
