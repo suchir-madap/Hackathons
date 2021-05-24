@@ -41,36 +41,40 @@
     margin-right: 20%;
 }
 .banner-btn{
-    margin: 50px auto 0;
+    margin: 5px auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    
 }
 .banner-btn a{
+    text-align: center;
+    letter-spacing: 0.00em;
+    color: #000;
     width: 100px;
     text-decoration: none;
-    font-weight: bold;
     display: inline-block;
     margin: 0 5px;
     padding: 12px 0;
-    color: #fff;
-    border: .5px solid #fff;
     position: relative;
     z-index: 1;
-    transition: color 0.5s;
+    transition: color 0.1s;
 }
 .banner-btn a span{
-    width: 0%;
-    height: 100%;
+    width: 100%;
+    height: 0%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    background: #fff;
+    background: #000;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 .banner-btn a:hover span{
-    width: 100%;
+    height: 7%;
 }
 .banner-btn a:hover{
-    color: #000;
+    color: #49c0f7;
+    font-weight: bold;
 }
 
 
