@@ -1,14 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;}
-
-#banner {
-    background: linear-gradient(315deg, #ffffff 0%, #7cac7c 50%);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
+
+
 .logo{
     width: 400px;
     top: 4%;
@@ -18,39 +14,18 @@
     margin-right: auto;
     
 }
-.banner-text{
-    text-align: center;
-    color: #fff;
-    padding-top: 0px;
-}
-.banner-text h1{
-    font-size: 60px;
-    font-family: 'Patua One', cursive;
-    padding-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    letter-spacing: 0.08em;
-}
-.banner-text p{
-    font-size: 20px;
-    width: center;
-    border: 15px;
-    margin: 25px;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-}
+
 .banner-btn{
     margin: 5px auto;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 18%;
+    margin-right: 18%;
     
 }
 .banner-btn a{
     text-align: center;
     letter-spacing: 0.00em;
     color: #000;
-    width: 100px;
+    width: 105px;
     text-decoration: none;
     display: inline-block;
     margin: 0 5px;
@@ -77,41 +52,135 @@
     font-weight: bold;
 }
 
-
-
-//the stuff below needs to be changed to stay at the bottom of the page{}
-#sideNav{
-    width: 100px;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
+/*This is for the main section under the buttons*/
+#banner {
     background: #7cac7c;
-    z-index: 2;
-}
-nav ul li{
-    list-style: none;
-    margin: 50px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-#manuBtn{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width; 770px){
-    .banner-text h1{
-        font-size: 44px;
-        font-family: 'Poppins', sans-serif;}
-    }
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 0px;
+}
+.banner-text h1{
+    font-size: 60px;
+    font-family: 'Patua One', cursive;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    letter-spacing: 0.08em;
+}
+.banner-text p{
+    font-size: 20px;
+    width: center;
+    border: 15px;
+    margin: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/*This is for the 1st section*/
+#sec1 {
+    background: #E6FFE7;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light1 {
+  margin-left: 10%;
+}
+
+.light1 h1 {
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 37px;
+    letter-spacing: 1.2 em;
+    margin-bottom: 5%;
+}
+
+.light1 p {
+    margin-right: 50%;
+    margin-bottom: 3%;
+}
+
+/*The below is for the CSS for the Bottom Buttons*/
+#bottom {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+
+}
+
+#low {
+  position: absolute;
+  left: 50%;
+}
+
+.button {
+  height: 60px;
+  width: 60px;
+  background-color:#FFF;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  float: left;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; 
+}
+
+.button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.button:hover {
+ width: 200px;
+}
+
+.button:nth-child(1):hover .icon{ background: #4267B2;}
+.button:nth-child(2):hover .icon{ background: #E1306C;}
+.button:nth-child(3):hover .icon{ background: #FF0000;}
+.button:nth-child(4):hover .icon{ background: #3CE19D;}
+.button:nth-child(5):hover .icon{ background: #1DA1F2;}
+
+.button:nth-child(1):hover span { color: #4267B2;}
+.button:nth-child(2):hover span { color: #E1306C;}
+.button:nth-child(3):hover span { color: #FF0000;}
+.button:nth-child(4):hover span { color: #3CE19D;}
+.button:nth-child(5):hover span { color: #1DA1F2;}
+
+.button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.button:hover i {
+  color: #FFF;
+  transition: all 0.3s ease-in-out;
 }
